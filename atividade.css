@@ -1,0 +1,69 @@
+.cabecalho{
+    color: white;
+    background-color: purple;
+    grid-area: cabecalho;
+    padding-left: 10px;
+}
+
+
+
+
+.navbar{
+    display: flex;
+    background-color: black;
+    grid-area: menu;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.navbaritem{
+    background-color: blueviolet;
+    color: white;
+    margin-right: 10px;
+    padding: 5px;
+   
+}
+
+.conteudo {
+    background-color: lightgray;
+    grid-area: central;
+}
+
+.conteudoitem {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    color: white;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.lateralEsquerda {
+    background-color: black;
+    grid-area: esquerda;
+}
+
+
+.lateralDireita{
+    background-color: black;
+    grid-area: direita;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 5% auto;
+    grid-template-areas: 
+        "cabecalho cabecalho cabecalho"
+        "menu menu menu"
+        "esquerda central direita";
+    height: auto;
+}
+
+body {
+    height: 100%;
+    width:100%
+}
